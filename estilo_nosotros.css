@@ -1,0 +1,236 @@
+/* Seccion Descripcion Nosotros */
+
+section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Qwitcher Grypen', cursive;
+    color:rgb(0, 0, 0);
+}
+
+section h1 {
+    text-align: center;
+    font-family: 'Qwitcher Grypen' cursive;
+    font-size: 4em;
+}
+
+h6 {
+    background-color: lightblue;
+    color: white;
+    border-radius: 20px;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: Center;
+    font-family: 'Playfair Display', serif;
+}
+
+section p {
+    color:rgb(0, 0, 0);
+    display: block;
+    margin: 0 10% 0 10%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3em;
+    padding: 2%;
+}
+
+.btn {
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding:2%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: darkcyan;
+    transform: scale(1.10);
+}
+    
+.butn {
+    background-color: lightblue;
+    color:white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding:1%;
+    text-align:Center;
+    cursor: pointer;
+}
+
+.butn:hover {
+    color: darkcyan;
+    transform: scale(1.10);
+}
+
+/* Contenedor Tarjetas */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.bloque1 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:3%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px lightblue;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque2 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:3%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px lightblue;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque3 {
+    text-align:Center;
+    background-image: url("Imagenes/Nosotros/fondo_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:270px;
+    height:440px;
+    border:3px black solid;
+    margin:3%;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px lightblue;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+}
+    
+.bloque1 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+    
+.bloque2 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+    
+.bloque3 img {
+    width:150px;
+    border-radius: 50%;
+    height:auto;
+    margin:5%;
+    opacity: 1;
+}
+
+/*--- API ---*/
+
+.clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 1%;
+}
+
+button {
+    background-color: #fff;
+    padding:1%;
+    text-align: center;
+    border: 0px;
+}
+
+#clientes_contenido{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin:2%;
+    border-radius: 7%;
+    opacity: 0.8;
+    font-family: 'Playfair Display';
+    font-size: 1em;
+    color: black;
+}
+
+    
+/* --- Media Query --- */
+
+@media only screen and (max-width:985px){
+
+    .bloque3 {
+        margin: 2%;
+    }
+
+    section h1 {
+        font-size: 3em;
+    }
+
+    h6 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+
+    h6 {
+        font-size: 1.2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex-direction: column;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+
+    h6 {
+        font-size: 1em;
+    }
+
+    section p {
+        font-size: 0.8em;
+    }
+}
